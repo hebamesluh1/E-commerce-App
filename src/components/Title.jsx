@@ -1,0 +1,12 @@
+import React from 'react'
+
+const Title = ({title}) => {
+  return (
+    <div className="flex flex-col text-center w-full mb-20 mt-20">
+                    <h2 className="text-xs text-yellow-500 tracking-widest font-medium title-font mb-1 uppercase">{title}</h2>
+                    <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 capitalize">Most Popular {title}</h1>
+                </div>
+  )
+}
+
+export default Title
