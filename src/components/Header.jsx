@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const navigation = [
     {
@@ -20,7 +20,11 @@ const navigation = [
     },
 ]
 const Header = () => {
-
+    const navigate = useNavigate('');
+    const handleClick =(path)=>{
+        navigate(path)
+    }
+    
     return (
         <header className="text-gray-600 body-font shadow-lg">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -33,12 +37,12 @@ const Header = () => {
                 <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                     {navigation.map((nav)=>{
                         return(
-
-                            <Link to={nav.path} className="mr-5 hover:text-gray-900">{nav.name}</Link>
+                            <div className="mr-5 hover:text-gray-900 cursor-pointer" onClick={()=>handleClick(`${nav.path}`)}>  {nav.name}
+                            </div>
                             )
                     })}
                 </nav>
-                <button className="inline-flex items-center  bg-yellow-500 border-0 py-2 px-4 focus:outline-none hover:bg-yellow-600 rounded text-base mt-4 md:mt-0 text-white">Go to Cart
+                <button className="inline-flex items-center  bg-yellow-500 border-0 py-2 px-4 focus:outline-none hover:bg-yellow-600 rounded text-base mt-4 md:mt-0 text-white" onClick={()=>handleClick('/cart')}>Go to Cart
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>

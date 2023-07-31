@@ -8,25 +8,26 @@ import Loading from '../../components/Loading'
 import Categories from '../../components/Categories'
 
 const Home = () => {
-    const [products , setProducts ] = useState([]);
-    useEffect(()=>{
-        const fetchProduct = async ()=>{
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        const fetchProduct = async () => {
             const res = await fetch('https://fakestoreapi.com/products?limit=12');
             const data = await res.json();
             setProducts(data)
         }
         fetchProduct();
     })
-  return (
-    <>
-        <Hero/>
-        <Categories/>
-        {
-            products?.length>0 ? <Products products={products}/>:<Loading/>
-        }
-        <State/>
-    </>
-  )
+    return (
+        <>
+            <Hero />
+            <Categories />
+            <Title title="products" />
+            {
+                products?.length > 0 ? <Products products={products} /> : <Loading />
+            }
+            <State />
+        </>
+    )
 }
 
 export default Home
