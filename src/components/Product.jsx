@@ -74,7 +74,7 @@ const Product = () => {
                                     <span className="text-gray-600 ml-3">4 Reviews</span>
                                 </span>
                                 <span className="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
-                                    <a className="text-gray-500">
+                                    <a className="text-gray-500" href="#">
                                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
                                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                         </svg>
