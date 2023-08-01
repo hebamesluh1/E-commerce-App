@@ -8,6 +8,7 @@ import Category from '../pages/Category';
 import Cart from '../pages/Cart';
 import Contact from '../pages/Contact';
 import Filter from '../pages/Filter';
+import NotFound from '../pages/NotFound';
 
 const Router = () => {
     return (
@@ -19,7 +20,7 @@ const Router = () => {
             <Route path="/filter" element={<Filter />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<h1>404</h1>} />
+            <Route path="*" element={<NotFound/>} />
         </Routes>
     )
 }

@@ -1,16 +1,16 @@
 import Layout from "./Layout";
-
+import ErrorBoundary from './components/ErrorBoundary'
 import Router from "./Router";
 
 
 
 function App() {
   return (
-    <div className="App">
+    <ErrorBoundary>
       <Layout>
         <Router/>
       </Layout>
-    </div>
+    </ErrorBoundary>
   );
 }
 

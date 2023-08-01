@@ -290,7 +290,11 @@ export default function Filter() {
               </form>
 
               {/* Product grid */}
-              <div className="lg:col-span-3">{/* Your content */}</div>
+              <div className="lg:col-span-3">
+                <div className='h-[55vh] flex justify-center items-center'>
+                    <img className='h-[40vh]' src="https://th.bing.com/th/id/R.5f20dbd423d0f4d6d70f651736cb164c?rik=umDr89L7pahong&pid=ImgRaw&r=0" alt="" />
+                </div>
+                </div>
             </div>
           </section>
         </main>

@@ -13,7 +13,7 @@ const Hero = () => {
                                 <label for="hero-field" className="leading-7 text-sm text-gray-600">Placeholder</label>
                                 <input type="text" id="hero-field" name="hero-field" className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-yellow-200 focus:bg-transparent focus:border-yellow-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                             </div>
-                            <button className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
+                            <button className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Let's Go </button>
                         </div>
                         <p className="text-sm mt-2 text-gray-500 mb-8 w-full">Neutra shabby chic ramps, viral fixie.</p>
                         <div className="flex lg:flex-row md:flex-col">
@@ -39,7 +39,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" loading="lazy" />
+                        <img className="object-cover object-center rounded" alt="hero" src="https://www.authorsguilds.com/wp-content/uploads/2020/04/ecommerce-store.png" loading="lazy" />
                     </div>
                 </div>
             </section>
