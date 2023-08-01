@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Products from '../../components/Products';
+import Spinner from '../../components/Spinner';
 
 const Category = () => {
     const { name } = useParams();
@@ -15,7 +16,7 @@ const Category = () => {
     })
     return (
         <>
-        {products.length>0?<Products products={products}/>:"Loading..."}
+        {products.length>0?<Products products={products}/>:<Spinner/>}
         </>
     )
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Products from '../../components/Products'
 import Categories from '../../components/Categories';
+import Spinner from '../../components/Spinner';
 const ProductsPage = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
@@ -17,7 +18,7 @@ const ProductsPage = () => {
             {
                 products.length > 0 ?
                     <Products products={products} /> :
-                    "loading...."
+                    <Spinner/>
             }
         </>
     )

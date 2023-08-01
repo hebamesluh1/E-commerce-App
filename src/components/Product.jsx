@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import Spinner from './Spinner';
 
 const Product = () => {
     const { id } = useParams();
@@ -41,7 +42,7 @@ const Product = () => {
         }
     }
     if (!Object.keys(product).length > 0) {
-        return <div>Loading .... </div>
+        return <Spinner/>
     }
     else {
         return (

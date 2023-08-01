@@ -61,7 +61,9 @@ const Cart = () => {
               <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 ">Total</h3>
             </div>
             {!cart.length ?
-              <div className='h-[55vh] flex justify-center items-center'>Cart is empty</div>
+              <div className='h-[55vh] flex justify-center items-center'>
+                <img className="w-100 h-[55vh]" src="https://th.bing.com/th/id/R.6c746d6d70f1edec0f21a307e2a01659?rik=Bd%2b5dWFpD6xmCg&pid=ImgRaw&r=0" alt="" />
+              </div>
               :
               <>
                 {cart?.map((item) => {
@@ -124,7 +126,7 @@ const Cart = () => {
             <div className="border-t mt-8">
               <div className="flex font-semibold justify-between py-6 text-sm uppercase">
                 <span>Total cost</span>
-                <span>${(Total+10).toFixed(2)}</span>
+                <span>${(Total + 10).toFixed(2)}</span>
               </div>
               <button className="bg-yellow-500 font-semibold hover:bg-yellow-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
             </div>

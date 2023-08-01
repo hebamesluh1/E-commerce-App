@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Features from './Features';
 import Title from './Title';
+import Spinner from './Spinner';
 
 const Categories = () => {
     const [Category, setCategory] = useState([]);
@@ -16,7 +17,7 @@ const Categories = () => {
 
     if (Category.length === 0) {
         <Title title="features" />
-        return <div>Loading ....</div>
+        return <Spinner/>
     } else {
         return (
             <>

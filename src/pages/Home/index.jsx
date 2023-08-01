@@ -4,8 +4,8 @@ import Products from '../../components/Products'
 import Features from '../../components/Features'
 import Title from '../../components/Title'
 import State from '../../components/State'
-import Loading from '../../components/Loading'
 import Categories from '../../components/Categories'
+import Spinner from '../../components/Spinner'
 
 const Home = () => {
     const [products, setProducts] = useState([]);
@@ -23,7 +23,7 @@ const Home = () => {
             <Categories />
             <Title title="products" />
             {
-                products?.length > 0 ? <Products products={products} /> : <Loading />
+                products?.length > 0 ? <Products products={products} /> : <Spinner/>
             }
             <State />
         </>

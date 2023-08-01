@@ -11,8 +11,8 @@ const navigation = [
         path:'/products'
     },
     {
-        name:'About',
-        path:'/about'
+        name:'Filter',
+        path:'/filter'
     },
     {
         name:'Contact',
